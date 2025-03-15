@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список дел на выходные</title>
+    <style>
+        ul{
+    color:darkblue 
+}
+ul1{
+    color:blueviolet
+}
+        body{
+            text-align:center
+        }
+        h1{
+            font-size: 70px;
+        }
+        ul1,ul{
+            font-size: 50px;
+        }
+        li{
+            font-size: 30px;
+        }
+        li{
+            text-align:center;
+        }
+        .completed {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <h1>Список дел на выходные</h1>
+    <ul1>Дела Мамы</ul1>
+    <li onclick="toggleCompleted(this)">Разобрать документы</li>
+    <li onclick="toggleCompleted(this)">Разобрать вещи в диване</li>
+    <li onclick="toggleCompleted(this)">Повесить сетки на окна</li>
+    <li onclick="toggleCompleted(this)">Вызвать замерщика на сетки</li>
+    <li onclick="toggleCompleted(this)">Разобрать полотенца(ночь нежна)</li>
+    <ul>Дела Максима</ul>
+    <li onclick="toggleCompleted(this)">Помыть обувь и убрать</li>
+    <li onclick="toggleCompleted(this)">Убрать пакеты и достать вещи на весну</li>
+    <li onclick="toggleCompleted(this)">Замерить окна для жалюзи</li>
+    <li onclick="toggleCompleted(this)">Поменять занавески</li>
+    <script>
+        function toggleCompleted(element) {
+            element.classList.toggle('completed');
+        }
+    </script>
+</body>
+
+</html>
+<!--//http://<192.168.1.67>:8000
